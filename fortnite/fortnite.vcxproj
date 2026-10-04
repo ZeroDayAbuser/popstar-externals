@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1b085bca-d358-4c61-8925-12e4ecb3b89f}</ProjectGuid>
+    <RootNamespace>fortnite</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\build</OutDir>
+    <IntDir>..\..\build\int</IntDir>
+    <TargetName>fortnite</TargetName>
+    <IncludePath>C:\Users\terramog-hypervisor\Desktop\emulated\emulated\fortnite\dependencies\freetype\include;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\terramog-hypervisor\Desktop\emulated\emulated\fortnite\dependencies\freetype\win64;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(VSInstallDir)DIA SDK\lib\amd64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\imgui;$(ProjectDir)dependencies\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\imgui;$(ProjectDir)dependencies\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\imgui;$(ProjectDir)dependencies\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)dependencies\imgui;$(ProjectDir)dependencies\freetype\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalDependencies>freetype.lib;diaguids.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dependencies\imgui\gui.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_draw.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_freetype.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_tables.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="workspace\render\menu\tabs\tab_aimbot.cpp" />
+    <ClCompile Include="workspace\render\menu\tabs\tab_settings.cpp" />
+    <ClCompile Include="workspace\render\menu\tabs\tab_visuals.cpp" />
+    <ClCompile Include="dependencies\oxorany\oxorany.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dependencies\freetype\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\config\ftheader.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\config\ftoption.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\config\ftstdlib.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\config\integer-types.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\config\mac-support.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\config\public-macros.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\freetype.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftadvanc.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftbbox.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftbdf.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftbitmap.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftbzip2.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftcache.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftchapters.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftcid.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftcolor.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftdriver.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\fterrdef.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\fterrors.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftfntfmt.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftgasp.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftglyph.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftgxval.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftgzip.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftimage.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftincrem.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftlcdfil.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftlist.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftlogging.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftlzw.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftmac.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftmm.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftmodapi.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftmoderr.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftotval.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftoutln.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftparams.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftpfr.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftrender.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftsizes.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftsnames.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftstroke.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftsynth.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftsystem.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\fttrigon.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\fttypes.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ftwinfnt.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\otsvg.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\t1tables.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\ttnameid.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\tttables.h" />
+    <ClInclude Include="dependencies\freetype\include\freetype\tttags.h" />
+    <ClInclude Include="dependencies\freetype\include\ft2build.h" />
+    <ClInclude Include="dependencies\imgui\blur\directx_blur.h" />
+    <ClInclude Include="dependencies\imgui\blur\pshader.hpp" />
+    <ClInclude Include="dependencies\imgui\gui.h" />
+    <ClInclude Include="dependencies\imgui\gui_colors.h" />
+    <ClInclude Include="dependencies\imgui\gui_font.h" />
+    <ClInclude Include="dependencies\imgui\gui_image.h" />
+    <ClInclude Include="dependencies\imgui\imconfig.h" />
+    <ClInclude Include="dependencies\imgui\imgui.h" />
+    <ClInclude Include="dependencies\imgui\imgui_freetype.h" />
+    <ClInclude Include="dependencies\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="dependencies\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="dependencies\imgui\imgui_internal.h" />
+    <ClInclude Include="dependencies\imgui\imgui_settings.h" />
+    <ClInclude Include="dependencies\imgui\imstb_rectpack.h" />
+    <ClInclude Include="dependencies\imgui\imstb_textedit.h" />
+    <ClInclude Include="dependencies\imgui\imstb_truetype.h" />
+    <ClInclude Include="dependencies\joyshock\JoyShockLibrary.h" />
+    <ClInclude Include="dependencies\mutation\engine\hashtypes\qtype_hash.hpp" />
+    <ClInclude Include="dependencies\mutation\engine\polyhashtypes\qtype_enchash.hpp" />
+    <ClInclude Include="dependencies\mutation\engine\polytypes\qtype_enc.hpp" />
+    <ClInclude Include="dependencies\mutation\engine\qengine.hpp" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\a64.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\arm.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\asmjit-scope-begin.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\asmjit-scope-end.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\asmjit.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\api-build_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\api-config.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\archcommons.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\archtraits.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\assembler.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\builder.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\builder_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\codebuffer.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\codeholder.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\codewriter_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\compiler.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\compilerdefs.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\constpool.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\cpuinfo.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\emithelper_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\emitter.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\emitterutils_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\environment.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\errorhandler.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\formatter.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\formatter_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\func.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\funcargscontext_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\globals.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\inst.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\jitallocator.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\jitruntime.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\logger.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\misc_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\operand.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\osutils.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\osutils_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\raassignment_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\rabuilders_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\radefs_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\ralocal_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\rapass_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\rastack_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\string.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\support.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\support_p.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\target.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\type.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\virtmem.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\zone.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\zonehash.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\zonelist.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\zonestack.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\zonestring.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\zonetree.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\core\zonevector.h" />
+    <ClInclude Include="dependencies\mutation\extern\asmjit\x86.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\arm.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\arm64.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\capstone.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\evm.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\m680x.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\m68k.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\mips.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\platform.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\ppc.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\sparc.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\systemz.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\tms320c64x.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\x86.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\capstone\xcore.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\platform.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\windowsce\intrin.h" />
+    <ClInclude Include="dependencies\mutation\extern\capstone\include\windowsce\stdint.h" />
+    <ClInclude Include="dependencies\mutation\polyc\polyc.hpp" />
+    <ClInclude Include="dependencies\mutation\qbase\qcallback.hpp" />
+    <ClInclude Include="dependencies\mutation\qbase\qdef.hpp" />
+    <ClInclude Include="dependencies\mutation\qbase\qexcept.hpp" />
+    <ClInclude Include="dependencies\mutation\qbase\qpreprocess.hpp" />
+    <ClInclude Include="dependencies\mutation\qbase\qstr.hpp" />
+    <ClInclude Include="dependencies\mutation\qhash\qhash.hpp" />
+    <ClInclude Include="dependencies\mutation\qhook\qhook_dtc.hpp" />
+    <ClInclude Include="dependencies\mutation\qimport\qimport.hpp" />
+    <ClInclude Include="dependencies\mutation\qmorph\qdisasm.hpp" />
+    <ClInclude Include="dependencies\mutation\qmorph\qgen.hpp" />
+    <ClInclude Include="dependencies\mutation\qutil\qcritical.hpp" />
+    <ClInclude Include="dependencies\oxorany\include.h" />
+    <ClInclude Include="dependencies\oxorany\oxorany.h" />
+    <ClInclude Include="dependencies\protection\imports\lazy-importer.h" />
+    <ClInclude Include="impl\controller\detection.h" />
+    <ClInclude Include="impl\driverless\day1.h" />
+    <ClInclude Include="impl\utils\utils.h" />
+    <ClInclude Include="workspace\core\unreal-engine\actor\aimbot\aimbot.h" />
+    <ClInclude Include="workspace\core\unreal-engine\actor\exploits\chams\chams.h" />
+    <ClInclude Include="workspace\core\unreal-engine\actor\loop.h" />
+    <ClInclude Include="workspace\core\unreal-engine\caching\cache.h" />
+    <ClInclude Include="workspace\core\unreal-engine\memory\decryption\decryption.h" />
+    <ClInclude Include="workspace\core\unreal-engine\memory\offsets.h" />
+    <ClInclude Include="workspace\core\unreal-engine\sdk\sdk.h" />
+    <ClInclude Include="workspace\core\unreal-engine\settings\settings.h" />
+    <ClInclude Include="workspace\core\unreal-engine\world\world.h" />
+    <ClInclude Include="workspace\render\loop\render.h" />
+    <ClInclude Include="workspace\render\menu\menu.h" />
+    <ClInclude Include="workspace\render\overlay\find-window\window.h" />
+    <ClInclude Include="workspace\render\overlay\overlay.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dependencies\freetype\win64\freetype.lib" />
+    <Library Include="dependencies\joyshock\JoyShockLibrary.lib" />
+    <Library Include="impl\driverless\day1.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

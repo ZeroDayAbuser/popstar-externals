@@ -1,0 +1,46 @@
+# ── Local secrets (never commit) ─────────────────────────────────────────
+src/auth/secrets.local.h
+*.local.h
+.env
+.env.*
+
+# ── Visual Studio ────────────────────────────────────────────────────────
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ── Build outputs ────────────────────────────────────────────────────────
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+[Ss]table/
+x64/
+Win32/
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.idb
+*.iobj
+*.ipdb
+*.obj
+*.log
+*.tlog
+*.lastbuildstate
+
+# ── vcpkg ────────────────────────────────────────────────────────────────
+vcpkg/
+vcpkg_installed/
+[Pp]ackages/
+
+# ── VMProtect / misc ─────────────────────────────────────────────────────
+*.vmp
+*.bak
+*.tmp
+Thumbs.db
+desktop.ini

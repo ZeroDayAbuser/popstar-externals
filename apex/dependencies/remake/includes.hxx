@@ -1,0 +1,42 @@
+#pragma once
+
+#include <windows.h>
+#include <d3d11.h>
+#include <dxgi.h>
+#include <tchar.h>
+#include <memory>
+
+#include <imgui.h>
+#include <imgui_impl_win32.h>
+#include <imgui_impl_dx11.h>
+
+#include <utils/output/console.hxx>
+#include <core/framework/gui/backend/math/math.hxx>
+#include <core/framework/gui/backend/render/device.hxx>
+#include <core/framework/gui/backend/manager/fonts/fonts.hxx>
+#include <core/framework/gui/backend/manager/textures/textures.hxx>
+#include <core/framework/gui/backend/inputs/inputs.hxx>
+#include <core/framework/gui/backend/manager/shaders/shaders.hxx>
+#include <core/framework/gui/backend/blur/blur.hxx>
+#include <core/framework/gui/backend/water/water_blob.hxx>
+#include <core/framework/gui/backend/render/render.hxx>
+#include <core/framework/gui/backend/animations/animations.hxx>
+#include <core/framework/gui/frontend/widgets/settings.hxx>
+#include <core/framework/gui/frontend/widgets/classes/context.hxx>
+#include <core/framework/gui/frontend/widgets/classes/base_element.hxx>
+#include <core/framework/gui/backend/manager/keybinds/keybinds.hxx>
+#include <core/framework/gui/frontend/widgets/classes/checkbox.hxx>
+#include <core/framework/gui/frontend/widgets/classes/button.hxx>
+#include <core/framework/gui/frontend/widgets/classes/slider.hxx>
+#include <core/framework/gui/frontend/widgets/classes/dropdown.hxx>
+#include <core/framework/gui/frontend/widgets/classes/multidropdown.hxx>
+#include <core/framework/gui/frontend/widgets/classes/colorpicker.hxx>
+#include <core/framework/gui/frontend/widgets/classes/text_input.hxx>
+#include <core/framework/gui/frontend/widgets/classes/listbox.hxx>
+#include <core/framework/gui/frontend/widgets/classes/popup.hxx>
+#include <core/framework/gui/frontend/widgets/classes/options.hxx>
+#include <core/framework/gui/frontend/widgets/classes/tab.hxx>
+#include <core/framework/gui/frontend/widgets/classes/child.hxx>
+#include <core/framework/gui/frontend/widgets/classes/window.hxx>
+#include <core/framework/gui/frontend/widgets/classes/keybind_list.hxx>
+#include <core/framework/gui/frontend/menu/menu.hxx>

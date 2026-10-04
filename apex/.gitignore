@@ -1,0 +1,31 @@
+# ── Build output ─────────────────────────────────────────────────────────
+bin/
+x64/
+[Dd]ebug/
+[Rr]elease/
+*.exe
+*.pdb
+*.obj
+*.iobj
+*.ipdb
+*.ilk
+*.idb
+*.exp
+*.lib
+*.log
+*.tlog
+*.recipe
+*.lastbuildstate
+
+# ── Visual Studio ────────────────────────────────────────────────────────
+.vs/
+*.user
+*.suo
+*.userosscache
+
+# ── Runtime / misc ───────────────────────────────────────────────────────
+imgui.ini
+*.bak
+*.tmp
+Thumbs.db
+desktop.ini

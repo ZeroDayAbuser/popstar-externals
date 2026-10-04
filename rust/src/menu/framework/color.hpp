@@ -1,0 +1,8 @@
+#pragma once
+
+#ifndef PAWJOB_MENU_FRAMEWORK_COLOR_HPP_GUARD
+#define PAWJOB_MENU_FRAMEWORK_COLOR_HPP_GUARD
+
+#include <utils/color.hpp>
+
+#endif // PAWJOB_MENU_FRAMEWORK_COLOR_HPP_GUARD
