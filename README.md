@@ -62,10 +62,3 @@ Vendored under each project's `dependencies/`:
 
 UI fonts and the logo live in each project's `assets/` folder.
 
----
-
-## License
-
-No license is provided. All rights reserved by the respective authors. This repository is shared
-for educational purposes; you may not use it commercially or in violation of any game's Terms of
-Service. Third-party components remain under their own licenses.
