@@ -12,25 +12,6 @@ Aimbot · Visuals · Chams · Loot · Radar
 
 </div>
 
----
-
-## ⚠️ Disclaimer
-
-This repository is published **for educational and research purposes only** — it is a study of
-external process instrumentation, driverless and hypervisor-assisted memory access, overlay window
-hijacking, and reverse engineering of commercial game engines.
-
-- Using this in an online game **violates the respective publisher's Terms of Service / EULA** and
-  will get your account **permanently banned**.
-- Use is entirely **at your own risk**. The authors take **no responsibility** for bans, hardware
-  flags, account loss, or any other consequences.
-- Do **not** use this against other players. Do **not** distribute compiled binaries.
-- No warranty of any kind is provided.
-
-If you do not agree with the above, do not use, build, or distribute this project.
-
----
-
 ## Projects
 
 | Project | Target | Memory backend | Overlay |
